@@ -1,106 +1,489 @@
 html {
     font-size: 10px;
-  }
+}
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6e6e6e;
+}
   
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #E8E8E8;
-  }
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px 4px #707070;
+}
   
-  header {
-      display: grid;
-      grid-template-columns: 40% 60%;
-      grid-template-rows: 100px;
-      background-color: #092532;
-      color: #ffffff;
-      box-shadow: 0px 0px 4px 4px #707070;
-  }
-  
-  h1 {
+h1 {
     font-size: 3.5rem;
     font-weight: 100;
-  }
+}
   
-  h4, p {
+h4, p {
     font-size: 1.5rem;
     font-weight: 100;
+}
+  
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+  
+header .navigation {
+    display: flex;
+}
+  
+header .navigation .photoPerfil {
+    margin: auto 5px;
+    margin-left: 150px;
+}
+  
+header .navigation .photoPerfil img {
+    border-radius: 50%;
+    border: 2px solid #00000021;
+    object-fit: cover;
+}
+  
+header .navigation h3 {
+    display: inline-block;
+    font-size: 2rem;
+    height: fit-content;
+    margin: 0;
+    margin-top: 10px;
+    width: 70px;
+    line-height: 133%;
+    font-weight: 300;
+}
+  
+header .navigation h4 {
+    position: relative;
+    top: 60px;
+    margin: 0;
+    left: -70px;
+    line-height: 126%;
+    height: fit-content;
+}
+  
+header .menuNav{
+    display: flex;
+    justify-content: flex-end;
   }
   
-  a {
-      text-decoration: none;
-      cursor: pointer;
-      color: #092532;
+header .menuNav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
   }
   
-  header .navigation {
-      display: flex;
+header .menuNav ul li {
+    margin-right: 30px;
   }
   
-  header .navigation .photoPerfil {
-      margin: auto 5px;
-      margin-left: 150px;
+header .menuNav ul li a {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #ffffff;
   }
   
-  header .navigation .photoPerfil img {
-      border-radius: 50%;
-      border: 2px solid #70707021;
-      object-fit: cover;
+header .menuNav ul li .hoverLine:hover {
+    text-decoration: underline;
+    text-decoration-color: #89c9b8;  
   }
   
-  header .navigation h3 {
-      display: inline-block;
-      font-size: 2rem;
-      height: fit-content;
-      margin: 0;
-      margin-top: 10px;
-      width: 70px;
-      line-height: 133%;
-      font-weight: 300;
+header .menuNav ul li .hoverBorder:hover {
+    border-radius: 25px;
+    border: 1px solid #707070;
+    background-color: #707070;
+    padding: 5px 15px;
+    color: #ffffff;
+  }
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    max-width: 1300px;
+    margin: auto;
+}
+  
+.hero .containerHero {
+    min-width: 768px;
+    margin: 0 auto;
+    display: inherit;
+    flex-wrap: inherit;
+    justify-content: inherit;
+}
+  
+.hero .containerHero h1 {
+    height: max-content;
+    width: max-content;
+}
+  
+.hero .containerHero div {
+    position: absolute;
+    bottom: 340px;
+}
+  
+.hero .containerHero div ul {
+    display: flex;
+    list-style: none; 
+    padding: 5px;
+    margin: 0;
+}
+  
+.hero .containerHero div ul li {
+    font-size: 50px;
+    display: inline-block;
+}
+  
+.hero .iconoHero1{
+    width: 80px;
+    height: auto;
+    margin-right: 25px;
+}
+   
+.buttonAboutMe {
+    display: flex;
+    justify-content: center;
   }
   
-  header .navigation h4 {
-      position: relative;
-      top: 60px;
-      margin: 0;
-      left: -70px;
-      line-height: 126%;
-      height: fit-content;
-  }
+.buttonAboutMe a {
+    padding: 25px 60px;
+    border-radius: 50px;
+    background-color: #3f3f3f;
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+}
   
-  header .menuNav{
-      display: flex;
-      justify-content: flex-end;
-  }
+.buttonAboutMe a::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: 'SOBRE MÍ';
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
-  header .menuNav ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-  }
+.buttonAboutMe a:hover::before {
+    width: 25%;
+    content: '';
+}
   
-  header .menuNav ul li {
-      margin-right: 30px;
-  }
+.mainAboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
   
-  header .menuNav ul li a {
-      font-weight: 500;
-      font-size: 2.5rem;
-      color: #ffffff;
-  }
+.mainAboutMe .containerMainAboutMe {
+    min-width: 1000px;
+    margin: 0 10%;
+    display: inherit;
+    justify-content: inherit;
+}
   
-  header .menuNav ul li .hoverLine:hover {
-      text-decoration: underline;
-      text-decoration-color: #89c9b8;  
-  }
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText {
+    margin: auto;
+    margin-left: 50px;
+    width: fit-content;
+}
   
-  header .menuNav ul li .hoverBorder:hover {
-      border-radius: 25px;
-      border: 1px solid #707070;
-      background-color: #707070;
-      padding: 5px 15px;
-      color: #ffc7c7;
-  }
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText h1 {
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding: 10px;
+}
   
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText h4 {
+    font-size: 5rem;
+    color: #222222;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding: 10px;
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText p {
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding: 10px;
+    line-height: 2.5rem;
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonHireMe {
+    display: inline-block;
+    padding: 25px 60px;
+    border-radius: 45px;
+    background-color: #232525;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    color: #ffffff;
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonHireMe::before {
+    position: absolute;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: 'CONTRATAME';
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonHireMe:hover::before {
+    width: 0%;
+    content: '';
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonProject {
+    display: inline-block;
+    padding: 25px 60px;
+    border-radius: 45px;
+    background-color: #a09e9e;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 40px;
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonProject a {
+    color: #ffffff;
+}
+  
+.mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonProject:hover {
+    background-color: #c0c0c0;
+}
+  
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 400px));
+    justify-content: center;
+    grid-gap: 20px;
+}
+  
+.portfolio .project {
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #ffffff;
+    height: fit-content;
+    padding-bottom: 20px;
+    box-shadow: 0 0 5px 1px #a09e9e;
+}
+  
+.portfolio .project .projectDetails .project-imageContainer {
+    margin: 0;
+}
+  
+.portfolio .project .projectDetails .project-imageContainer img {
+    width: 100%;
+    object-fit: cover;
+}
+  
+.portfolio .project .projectDetails .projectDescriptionText {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+  
+.portfolio .project .projectDetails .projectDescriptionText .projectDescriptionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.portfolio .project .projectDetails .projectDescriptionText .projectDescriptionTitle h4, p {
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+}
+  
+.portfolio .project .projectDetails .projectDescriptionText .project-description {
+    margin-bottom: 20px;
+}
+  
+.portfolio .project .projectDetails .projectDescriptionText a {
+    padding: 15px 40px;
+    border-radius: 45px;
+    background-color: #a09e9e;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+  
+.portfolio .project .projectDetails .projectDescriptionText a:hover {
+    background-color: #c9c9c9;
+    color: #092532;
+}
+  
+.containerPortfolio {
+    width: 100vw;
+}
+  
+.containerPortfolio h1 {
+    text-align: center;
+    font-weight: 400;
+    color: #2A2C2C;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+  
+.containerPortfolio .buttonContact {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+  
+.containerPortfolio .buttonContact a {
+    padding: 25px 60px;
+    border-radius: 45px;
+    background-color: #a09e9e;
+    color: #092532;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+}
+  
+.containerPortfolio .buttonContact a:hover {
+    background-color: #cfcdcd;
+}
+  
+.contact { 
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+  
+.contact .containerContact {
+    width: 60%;
+    height: fit-content;
+    background-color: #000000;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px 60px;
+}
+  
+.contact .containerContact h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 20px;
+}
+  
+.contact .containerContact h3 {
+    font-weight: 300;
+    margin: 0;
+    padding: 10px 20px 40px 20px;
+}
+  
+.contact .containerContact label {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 15px 5px 5px 20px;
+    margin: 0;
+    display: block;
+}
+  
+.contact .containerContact form {
+    padding: 0 20px;
+    width: max-content;
+}
+  
+.contact .containerContact form input {
+    width: 350px;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #E9E9E9;
+    border: 0;
+}
+  
+.contact .containerContact form .inputRequest {
+    padding-bottom: 70px;
+}
+  
+.contact .containerContact form button {
+    display: block;
+    padding: 15px 35px;
+    border-radius: 45px;
+    background-color: #89C9B8;
+    color: #092532;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto;
+    border: 0;
+}
+  
+.contact .containerContact form button:hover {
+    background-color: #89c9b880;
+}
+  
+footer {
+    width: 100vw;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 0px 2px 2px #707070;
+}
+  
+footer a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+  
+footer p {
+    padding: 20px 50px;
+    margin: 0;
+}
+  
+.burger-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #84c3b380;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
