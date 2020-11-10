@@ -10,4 +10,4 @@ Revisen mis repositorios y cuéntenme que puedo seguir mejorando.
 
 _Soy Jeison Crespo y quiero seguir avanzando con mis conocimientos._
 
-> Written with [StackEdit](https://stackedit.io/).
+> Escrito en [StackEdit](https://stackedit.io/).
