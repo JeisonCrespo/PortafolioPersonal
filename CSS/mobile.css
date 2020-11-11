@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1270px) {
+    .mainAboutMe .containerMainAboutMe .containerImg img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header .menuNav ul li a {
+        font-size: 2rem;
+    }
+
+    .mainAboutMe .containerMainAboutMe {
+        margin: 0;
+    }
+
+    .mainAboutMe .containerMainAboutMe .containerMainAboutMeText {
+        width: 60%;
+        margin-left: 15px;
+    }
+
+    .containerPortfolio {
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(2, minmax(100px, 400px));
+    }
+
+    .containerPortfolio .buttonContact {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 804px) {
+    .header .menuNav ul li a {
+        font-size: 1.5rem;
+    }
+
+    .mainAboutMe .containerMainAboutMe {
+        min-width: unset;
+        flex-wrap: wrap;
+    }
+
+    .mainAboutMe .containerMainAboutMe .containerMainAboutMeText {
+        width: unset;
+        margin-left: unset;
+    }
+
+    .mainAboutMe .containerMainAboutMe .containerImg {
+        margin: auto;
+    }
+
+    footer {
+        height: unset;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .burger-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header {
+        display: block;
+        height: auto;
+    }
+
+    .header .navigation {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header .navigation .photoPerfil {
+        margin: 10px 10px;
+    }
+
+    .header .navigation  h4, h3 {
+        position: initial;
+        margin: 10px 10px;
+    }
+
+    .header .menuNav {
+        position: fixed;
+        background-color: #09253280;
+        z-index: 2;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .header .menuNav ul li a {
+        font-size: 2.5rem;
+    }
+
+    .header .menuNav ul {
+        display: block;
+        line-height: 4;
+    }
+
+    .header .menuNav.is-active {
+        left: 0;
+    }
+
+    .mainAboutMe {
+        height: unset;
+        margin: 15px auto;
+    }
+
+    footer {
+        height: unset;
+        text-align: center;
+    }
+
+    .hero .containerHero {
+        min-width: unset;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header .navigation .photoPerfil img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero {
+        justify-content: center;
+    }
+
+
+    .hero .containerHero h1, .hero .containerHero div {
+        z-index: 1;
+        background-color: #f8fbfc5e;
+    }
+
+    .hero .containerHero div {
+        bottom: 284px; 
+        height: max-content;
+    }
+
+    .hero .containerHero img {
+        position: absolute;
+        width: 300px;
+    }
+
+    .buttonAboutMe {
+        display: none;
+    }
+
+    .mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonHireMe, .mainAboutMe .containerMainAboutMe .containerMainAboutMeText .buttonProject {
+        display: none;
+    }
+
+    .portfolio {
+        grid-template-columns: 350px;
+    }
+
+    .contact .containerContact {
+        padding: 20px 15px;
+        width: unset;
+    }
+
+    .contact .containerContact form input {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero .containerHero div {
+        bottom: 240px; 
+    }
+}
