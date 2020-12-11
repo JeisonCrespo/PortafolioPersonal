@@ -17,7 +17,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Mulish", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -99,7 +99,8 @@ body {
   max-width: 768px;
   margin: 0 auto;
   display: inherit;
-  flex-wrap: inherit;
+  display: flex;
+  flex-direction: column;
   justify-content: inherit;
 }
 
@@ -114,14 +115,14 @@ body {
 
 .containerHero .profile__img {
   width: 120px;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 0px;
 }
 
 .hero .containerHero div {
-  position: absolute;
-  bottom: 200px;
-  padding-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .containerHero div ul {
@@ -191,25 +192,12 @@ body {
 }
 
 .mainAboutMe {
-  display: grid;
+  display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   width: 100%;
   background-color: var(--background-section);
-}
-
-.mainAboutMe .containerMainAboutMe {
-  display: inherit;
-  justify-content: inherit;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mainAboutMe .containerImg img {
-  width: 150px;
-  padding-top: 15px;
-  margin-left: 110px;
 }
 
 .mainAboutMe .containerMainAboutMe .containerMainAboutMeText {
