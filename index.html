@@ -4,35 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/mobile.css" />
     <link rel="icon" type="IMAGE/png" href="./IMAGES/Jeison Crespo.png" />
     <title>Portafolio Personal</title>
   </head>
+
   <body>
     <header class="header">
-      <div class="navigation">
-        <figure class="photoPerfil">
-          <img
-            src="./IMAGES/Profile.jpeg"
-            alt="Foto de perfil de Jeison Crespo"
-            width="70px"
-            height="70px"
-          />
-        </figure>
-        <h3 alt="Nombre">
-          Jeison <br />
-          Crespo
-        </h3>
-        <h4 alt="Profesión">Desarrollador Web</h4>
-      </div>
-      <nav class="menuNav" class="is-active">
+      <figure class="photoPerfil">
+        <img
+          class="header__img"
+          src="./IMAGES/Profile.jpeg"
+          alt="Foto de perfil de Jeison Crespo"
+        />
+      </figure>
+      <h3 alt="Nombre">
+        Jeison <br />
+        Crespo <br />
+        Programador Web
+      </h3>
+      <div class="header__menu">
+        <p>Más Información</p>
         <ul>
           <li><a href="#main" class="hoverLine"> Sobre Mi</a></li>
           <li><a href="#portfolio" class="hoverLine">Proyectos</a></li>
           <li><a href="#contact" class="hoverLine">Contacto</a></li>
           <li><a href="" class="hoverBorder" target="_blank">Curriculum</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
     <section class="hero">
       <div class="containerHero">
@@ -40,7 +38,8 @@
           Hola, yo soy <br /><strong>Jeison Crespo</strong><br />
           Desarrollador web
         </h1>
-        <div>
+        <img src="./IMAGES/Profile.jpeg" alt="Foto de portada" />
+        <div class="iconprofile">
           <ul>
             <li>
               <a
@@ -64,9 +63,7 @@
             </li>
           </ul>
         </div>
-        <img src="./IMAGES/Profile.jpeg" alt="Foto de portada" width="400px" />
       </div>
-      <hr width="1000px" />
     </section>
     <section class="buttonAboutMe">
       <a href="#main" class="button">SOBRE MI</a>
@@ -74,14 +71,10 @@
     <section class="mainAboutMe" id="main">
       <div class="containerMainAboutMe">
         <div class="containerImg">
-          <img
-            src="./IMAGES/Profile.jpeg"
-            alt="Foto de Jeison Crespo"
-            width="400px"
-          />
+          <img src="./IMAGES/Profile.jpeg" alt="Foto de Jeison Crespo" />
         </div>
         <div class="containerMainAboutMeText">
-          <h1>SOBRE MI</h1>
+          <h2>SOBRE MI</h2>
           <h4>Quien soy?</h4>
           <p>
             Hola!, mi nombre es Jeison Crespo, vivo en Venezuela, soy estudiante
@@ -93,89 +86,82 @@
             Tengo conocimiento en HTML5, CSS3, este conocimiento se refleja en
             el desarrollo de mi portafolio.
           </p>
-          <div class="buttonHireMe">
-            <a href="" class="button">Trabajemos Juntos</a>
+        </div>
+      </div>
+    </section>
+    <section class="buttonHireMe">
+      <a href="#main" class="button">Trabajemos Juntos</a>
+    </section>
+    <section class="carousel">
+      <h2>Proyectos</h2>
+      <div class="carousel__container">
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="./IMAGES/GoogleClone.png"
+            alt="Google Clone Page"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img src="./IMAGES/Html.png" alt="HTML" />
+              <img src="./IMAGES/Css.png" alt="Css" />
+            </div>
+            <p class="carousel-item__details--tittle">Google Clone Page</p>
+            <p class="carousel-item__details--subtittle">
+              Ejercio sobre la pagina de google
+            </p>
+            <a href="https://github.com/JeisonCrespo/GoogleClonePage"
+              >Mas Información</a
+            >
           </div>
-          <div class="buttonProject">
-            <a href="#portfolio" class="button">PROYECTOS</a>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="./IMAGES/Mobile-first.png"
+            alt="Mobile-first"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img src="./IMAGES/Html.png" alt="HTML" />
+              <img src="./IMAGES/Css.png" alt="Css" />
+            </div>
+            <p class="carousel-item__details--tittle">Mobile-first</p>
+            <p class="carousel-item__details--subtittle">
+              Ejercicio sobre una maquetacion <br />
+              mobile-first
+            </p>
+            <a href="https://github.com/JeisonCrespo/Maquetacion-Mobile-First"
+              >Mas Información</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="./IMAGES/platzi-video.png"
+            alt="platzi-video"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img src="./IMAGES/Html.png" alt="HTML" />
+              <img src="./IMAGES/Css.png" alt="Css" />
+            </div>
+            <p class="carousel-item__details--tittle">platzi-video</p>
+            <p class="carousel-item__details--subtittle">
+              Ejercicio sobre una pagina con <br />
+              login y error 404
+            </p>
+            <a href="https://github.com/JeisonCrespo/Platzi-video"
+              >Mas Información</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <div class="containerPortfolio" id="portfolio">
-      <h1>PROYECTOS</h1>
-      <section class="portfolio">
-        <article class="project">
-          <div class="projectDetails">
-            <figure class="project-imageContainer">
-              <img
-                src="./IMAGES/GoogleClone.png"
-                alt="Foto sobre el resultado del proyecto"
-                width="300px"
-                height="300px"
-              />
-            </figure>
-            <div class="projectDescriptionText">
-              <div class="projectDescriptionTitle">
-                <h4 class="project-title">Clone Google Page</h4>
-                <img
-                  src="https://img.icons8.com/color/48/000000/css3.png"
-                  alt="Herramientas utilizada CSS"
-                  width="30px"
-                />
-              </div>
-              <div class="project-description">
-                <p>Diseño de una pagina principal de Google.</p>
-              </div>
-              <div>
-                <a
-                  href="https://github.com/JeisonCrespo/GoogleClonePage"
-                  target="_blank"
-                  >LEER MAS</a
-                >
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="projectDetails">
-            <figure class="project-imageContainer">
-              <img
-                src="./IMAGES/Pokedex.png"
-                alt="Foto sobre el resultado del proyecto"
-                width="300px"
-                height="300px"
-              />
-            </figure>
-            <div class="projectDescriptionText">
-              <div class="projectDescriptionTitle">
-                <h4 class="project-title">Pokedex</h4>
-                <img
-                  src="https://img.icons8.com/color/48/000000/javascript.png"
-                  alt="Herramienta utilizada JavaScript"
-                  width="30px"
-                />
-              </div>
-              <div class="project-description">
-                <p>
-                  Este proyecto se trata de una pokedex que he diseñado con JS.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="https://github.com/JeisonCrespo/Pokedex-js"
-                  target="_blank"
-                  >LEER MAS</a
-                >
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <div class="buttonContact">
-        <a href="#contact" class="button">CONTATO</a>
-      </div>
-    </div>
+    <section class="buttonContact">
+      <a href="#contact" class="button">Contacto</a>
+    </section>
     <section class="contact" id="contact">
       <div class="containerContact">
         <h2>¡HABLEMOS!</h2>
