@@ -26,7 +26,7 @@
         <p>Más Información</p>
         <ul>
           <li><a href="#main" class="hoverLine"> Sobre Mi</a></li>
-          <li><a href="#portfolio" class="hoverLine">Proyectos</a></li>
+          <li><a href="#proyectos" class="hoverLine">Proyectos</a></li>
           <li><a href="#contact" class="hoverLine">Contacto</a></li>
           <li><a href="" class="hoverBorder" target="_blank">Curriculum</a></li>
         </ul>
@@ -38,7 +38,11 @@
           Hola, yo soy <br /><strong>Jeison Crespo</strong><br />
           Desarrollador web
         </h1>
-        <img src="./IMAGES/Profile.jpeg" alt="Foto de portada" />
+        <img
+          class="profile__img"
+          src="./IMAGES/Profile.jpeg"
+          alt="Foto de portada"
+        />
         <div class="iconprofile">
           <ul>
             <li>
@@ -47,7 +51,7 @@
                 target="_blank"
                 aria-label="Twitter Jeison"
                 ><img
-                  class="iconoHero1"
+                  class="iconoHero"
                   src="./IMAGES/Twitter.png"
                   alt="Twitter"
                 />
@@ -58,7 +62,18 @@
                 href="https://github.com/JeisonCrespo"
                 target="_blank"
                 aria-label="github Jeison"
-                ><img class="iconoHero1" src="./IMAGES/GitHub.png" alt="GitHub"
+                ><img class="iconoHero" src="./IMAGES/GitHub.png" alt="GitHub"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jeison-crespo-046630200/"
+                target="_blank"
+                aria-label="linkedin Jeison"
+                ><img
+                  class="iconoHero"
+                  src="./IMAGES/linkedin.png"
+                  alt="linkedin"
               /></a>
             </li>
           </ul>
@@ -92,7 +107,7 @@
     <section class="buttonHireMe">
       <a href="#main" class="button">Trabajemos Juntos</a>
     </section>
-    <section class="carousel">
+    <section class="carousel" id="proyectos">
       <h2>Proyectos</h2>
       <div class="carousel__container">
         <div class="carousel-item">

@@ -18,6 +18,7 @@
 html {
   font-size: 62.5%;
   font-family: "Mulish", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,23 +109,29 @@ body {
   font-size: 2.4rem;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 15px;
 }
 
-.containerHero img {
+.containerHero .profile__img {
   width: 120px;
-  margin-left: 50px;
+  margin-left: 100px;
+  padding: 15px 0px;
 }
 
 .hero .containerHero div {
   position: absolute;
   bottom: 200px;
+  padding-left: 25px;
 }
 
 .hero .containerHero div ul {
   display: flex;
   list-style: none;
-  padding: 5px;
+  padding-left: 25px;
   margin: 0;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
 .hero .containerHero div ul li {
@@ -132,8 +139,13 @@ body {
   display: inline-block;
 }
 
-.hero .iconoHero1 {
-  width: 80px;
+.hero .iconoHero {
+  width: 60px;
+  height: auto;
+  margin-right: 25px;
+}
+.hero .iconoHero2 {
+  width: 90px;
   height: auto;
   margin-right: 25px;
 }
@@ -195,9 +207,9 @@ body {
 }
 
 .mainAboutMe .containerImg img {
-  width: 120px;
+  width: 150px;
   padding-top: 15px;
-  margin-left: 100px;
+  margin-left: 110px;
 }
 
 .mainAboutMe .containerMainAboutMe .containerMainAboutMeText {
@@ -208,16 +220,16 @@ body {
 
 .mainAboutMe .containerMainAboutMe .containerMainAboutMeText h2 {
   color: #000000;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.6px;
   margin: 0;
   padding: 10px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 .mainAboutMe .containerMainAboutMe .containerMainAboutMeText h4 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #222222;
   font-weight: 500;
   letter-spacing: 0.6px;
@@ -228,13 +240,13 @@ body {
 
 .mainAboutMe .containerMainAboutMe .containerMainAboutMeText p {
   color: #ffffff;
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: 0.6px;
   margin: 0;
   padding: 10px;
-  line-height: 1.6rem;
+  line-height: 2.4rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .buttonHireMe {
@@ -456,7 +468,7 @@ body {
   display: block;
   padding: 15px 35px;
   border-radius: 45px;
-  background-color: #89c9b8;
+  background-color: var(--blue-gray);
   color: #092532;
   font-size: 2.5rem;
   font-weight: 500;
@@ -489,19 +501,6 @@ footer a {
 footer p {
   padding: 20px 50px;
   margin: 0;
-}
-
-.burger-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #84c3b380;
-  text-align: center;
-  position: fixed;
-  z-index: 3;
-  left: 10px;
-  top: 10px;
-  display: none;
 }
 
 ::-webkit-scrollbar {
