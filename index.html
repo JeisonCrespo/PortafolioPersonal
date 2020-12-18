@@ -5,224 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:900&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="icon" type="IMAGE/png" href="./IMAGES/Jeison Crespo.png" />
+    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width: 768px)" />
+    <link rel="icon" type="img/png" href="./img/Jeison Crespo.png" />
     <title>Portafolio Personal</title>
   </head>
   <body>
-    <header class="header">
-      <figure class="photoPerfil">
-        <img
-          class="header__img"
-          src="./IMAGES/Profile.jpeg"
-          alt="Foto de perfil de Jeison Crespo"
-        />
-      </figure>
-      <h3 alt="Nombre">
-        Jeison <br />
-        Crespo <br />
-        Programador Web
-      </h3>
-      <div class="header__menu">
-        <p>Más Información</p>
-        <ul>
-          <li><a href="#main" class="hoverLine"> Sobre Mi</a></li>
-          <li><a href="#proyectos" class="hoverLine">Proyectos</a></li>
-          <li><a href="#contact" class="hoverLine">Contacto</a></li>
-          <li><a href="" class="hoverBorder" target="_blank">Curriculum</a></li>
-        </ul>
-      </div>
-    </header>
-    <section class="hero">
-      <div class="containerHero">
-        <h1>
-          Hola, yo soy <br /><strong>Jeison Crespo</strong><br />
-          Desarrollador web
-        </h1>
-        <img
-          class="profile__img"
-          src="./IMAGES/Profile.jpeg"
-          alt="Foto de portada"
-        />
-        <div class="iconprofile">
-          <ul>
-            <li>
-              <a
-                href="https://twitter.com/crespojeison"
-                target="_blank"
-                aria-label="Twitter Jeison"
-                ><img
-                  class="iconoHero"
-                  src="./IMAGES/Twitter.png"
-                  alt="Twitter"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/JeisonCrespo"
-                target="_blank"
-                aria-label="github Jeison"
-                ><img class="iconoHero" src="./IMAGES/GitHub.png" alt="GitHub"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jeison-crespo-046630200/"
-                target="_blank"
-                aria-label="linkedin Jeison"
-                ><img
-                  class="iconoHero"
-                  src="./IMAGES/linkedin.png"
-                  alt="linkedin"
-              /></a>
-            </li>
-          </ul>
+    <div id="app">
+      <header class="header">
+        <a class="noSelect" href="">
+          <figure class="logo">
+            <img src="./img/Jeison Crespo.png" alt="logo" />
+          </figure>
+        </a>
+        <button class="noSelect burger-button" id="burger-menu"></button>
+        <nav class="menu">
+          <ol>
+            <li class="noSelect link-navbar" id="Home">Home</li>
+            <li class="noSelect link-navbar" id="Sobre">Sobre mí</li>
+            <li class="noSelect link-navbar" id="Proyectos">Proyectos</li>
+            <li class="noSelect link-navbar" id="Contacto">Contacto</li>
+          </ol>
+        </nav>
+        <div class="redes">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
         </div>
-      </div>
-    </section>
-    <section class="buttonAboutMe">
-      <a href="#main" class="button">SOBRE MI</a>
-    </section>
-    <section class="mainAboutMe" id="main">
-      <div class="containerMainAboutMe">
-        <div class="containerMainAboutMeText">
-          <h2>SOBRE MI</h2>
-          <h4>Quien soy?</h4>
-          <p>
-            Hola!, mi nombre es Jeison Crespo, vivo en Venezuela, soy estudiante
-            de desarrollo web y comenze a estudiar este mundo realizando cursos
-            en Platzi, actualmente estoy haciendo la escuela de desarrollo web
-            para convertirme en desarrollador web. <br />
-            <br />
-            Aunque soy nuevo en este mundo, estoy aprendiendo habilidades que
-            poco a poco espero poder mejorar. <br />
-            <br />
-            Tengo conocimiento en HTML5, CSS3, este conocimiento se refleja en
-            el desarrollo de mi portafolio.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="buttonHireMe">
-      <a href="#contact" class="button">Trabajemos Juntos</a>
-    </section>
-    <section class="carousel" id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="carousel__container">
-        <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="./IMAGES/GoogleClone.png"
-            alt="Google Clone Page"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img src="./IMAGES/Html.png" alt="HTML" />
-              <img src="./IMAGES/Css.png" alt="Css" />
-            </div>
-            <p class="carousel-item__details--tittle">Google Clone Page</p>
-            <p class="carousel-item__details--subtittle">
-              Ejercio sobre la pagina de google
+      </header>
+      <div class="hero">
+        <div class="info-hero">
+          <div class="soy">
+            <h1>HOLA SOY <br /><strong>Jeison Crespo</strong></h1>
+            <p>
+              Frontend Developer con gran pasión por el diseño y desarrollo web.
             </p>
-            <a href="https://github.com/JeisonCrespo/GoogleClonePage"
-              >Mas Información</a
-            >
+            <a class="noSelect" href="#">
+              <button class="btn-primary noSelect">Ver más</button>
+            </a>
           </div>
+          <figure class="flores-hero">
+            <img src="./img/flores.svg" alt="Flores" />
+          </figure>
         </div>
-        <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="./IMAGES/Mobile-first.png"
-            alt="Mobile-first"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img src="./IMAGES/Html.png" alt="HTML" />
-              <img src="./IMAGES/Css.png" alt="Css" />
-            </div>
-            <p class="carousel-item__details--tittle">Mobile-first</p>
-            <p class="carousel-item__details--subtittle">
-              Ejercicio sobre una maquetacion <br />
-              mobile-first
-            </p>
-            <a href="https://github.com/JeisonCrespo/Maquetacion-Mobile-First"
-              >Mas Información</a
-            >
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="./IMAGES/platzi-video.png"
-            alt="platzi-video"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img src="./IMAGES/Html.png" alt="HTML" />
-              <img src="./IMAGES/Css.png" alt="Css" />
-            </div>
-            <p class="carousel-item__details--tittle">platzi-video</p>
-            <p class="carousel-item__details--subtittle">
-              Ejercicio sobre una pagina con <br />
-              login y error 404
-            </p>
-            <a href="https://github.com/JeisonCrespo/Platzi-video"
-              >Mas Información</a
-            >
-          </div>
-        </div>
+        <figure class="img-hero">
+          <img src="./img/ProfilePicture.png" alt="perfil" />
+        </figure>
       </div>
-    </section>
-    <section class="buttonContact">
-      <a href="#contact" class="button">Contacto</a>
-    </section>
-    <section class="contact" id="contact">
-      <div class="containerContact">
-        <h2>¡HABLEMOS!</h2>
-        <h3>Llámame o envíame solicitud</h3>
-        <p><i class="icon-contact"></i>+58 412-5353800</p>
-        <p><i class="icon-mail"></i>jeisoncrespo15@gmail.com</p>
-        <form action="" method="">
-          <label for="e-mail">e-mail</label>
-          <input
-            id="e-mail"
-            arial-label="e-mail"
-            type="text"
-            name="contact"
-            placeholder="e-mail"
-            class="inputMail"
-          />
-          <label for="Request">Solicitud</label>
-          <input
-            id="Request"
-            arial-label="Type your request"
-            type="text"
-            name="contactRequest"
-            placeholder="Escribe tu solicitud"
-            class="inputRequest"
-          />
-          <button
-            arial-label="submit the message "
-            type="submit"
-            id="buttonSend"
-          >
-            ENVIAR
-          </button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <p>
-        © 2020 <strong>Portafolio Jeison Crespo</strong>, All Rights Reserved
-      </p>
-      <p>
-        Diseñado por
-        <a href="https://twitter.com/crespojeison">@crespojeison</a>
-      </p>
-    </footer>
+    </div>
   </body>
 </html>
