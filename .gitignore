@@ -1,5 +1,6 @@
 
 FONTS/
 temporal/
-.vscode/
+.vscode/settings.json
 sass/
+css/.map
